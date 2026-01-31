@@ -5,6 +5,7 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
+      base: '/B2B-PCN-Connect/', // <--- 必須加這一行，否則網頁抓不到圖片和程式碼！
       server: {
         port: 3000,
         host: '0.0.0.0',
